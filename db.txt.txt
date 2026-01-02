@@ -1,0 +1,92 @@
+-- Create database
+CREATE DATABASE IF NOT EXISTS smartbank;
+USE smartbank;
+
+-- Users table
+CREATE TABLE IF NOT EXISTS users (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    phone VARCHAR(15) NOT NULL,
+    address TEXT NOT NULL,
+    date_of_birth DATE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+select*from users;
+
+-- Accounts table with enhanced fields
+CREATE TABLE IF NOT EXISTS accounts (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    account_number VARCHAR(20) UNIQUE NOT NULL,
+    user_id INT NOT NULL,
+    balance DECIMAL(15,2) DEFAULT 0.00,
+    account_type VARCHAR(50) NOT NULL,
+    bank_name VARCHAR(100) NOT NULL,
+    status ENUM('PENDING', 'ACTIVE', 'SUSPENDED', 'REJECTED') DEFAULT 'PENDING',
+    initial_deposit DECIMAL(15,2) DEFAULT 0.00,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+select*from accounts;
+
+-- Transactions table
+CREATE TABLE IF NOT EXISTS transactions (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    from_account VARCHAR(20) NOT NULL,
+    to_account VARCHAR(20) NOT NULL,
+    amount DECIMAL(15,2) NOT NULL,
+    type ENUM('TRANSFER', 'DEPOSIT', 'WITHDRAWAL', 'INTEREST') DEFAULT 'TRANSFER',
+    description TEXT,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    INDEX idx_from_account (from_account),
+    INDEX idx_to_account (to_account),
+    INDEX idx_timestamp (timestamp)
+);
+
+-- Admins table
+CREATE TABLE IF NOT EXISTS admins (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    email VARCHAR(100),
+    role ENUM('admin', 'clerk', 'manager') DEFAULT 'admin',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- Insert default admin accounts with PROPER BCrypt hashes
+-- Password for both: "password123"
+INSERT INTO admins (username, password_hash, email, role) VALUES 
+('admin', '$2a$12$LQv3c1yqBWVHxkd0L6kZrO.El4gWIWfTp8s5M2Vr2V2V2V2V2V2V2', 'admin@smartbank.com', 'admin'),
+('clerk', '$2a$12$LQv3c1yqBWVHxkd0L6kZrO.El4gWIWfTp8s5M2Vr2V2V2V2V2V2V2', 'clerk@smartbank.com', 'clerk');
+
+-- Alternative: Insert with simple passwords for testing (uncomment if needed)
+-- INSERT INTO admins (username, password_hash, email, role) VALUES 
+-- ('admin', 'admin123', 'admin@smartbank.com', 'admin'),
+-- ('clerk', 'clerk123', 'clerk@smartbank.com', 'clerk');
+
+-- Create indexes for better performance
+CREATE INDEX idx_accounts_user_id ON accounts(user_id);
+CREATE INDEX idx_accounts_status ON accounts(status);
+CREATE INDEX idx_accounts_number ON accounts(account_number);
+CREATE INDEX idx_users_email ON users(email);
+CREATE INDEX idx_admins_username ON admins(username);
+
+-- Create a view for account summaries
+CREATE VIEW account_summary AS
+SELECT 
+    a.account_number,
+    a.balance,
+    a.account_type,
+    a.bank_name,
+    a.status,
+    u.first_name,
+    u.last_name,
+    u.email,
+    u.phone
+FROM accounts a
+JOIN users u ON a.user_id = u.id;

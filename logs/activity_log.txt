@@ -1,0 +1,807 @@
+[2025-10-21 19:44:58] INFO - === SmartBank Application Started ===
+[2025-10-21 19:44:58] INFO - System initialized successfully
+[2025-10-21 19:46:50] ERROR - Database connection failed: Unknown database 'smartbank'
+[2025-10-21 19:46:50] ERROR - Failed to create user: Cannot invoke "java.sql.Connection.prepareStatement(String, int)" because "conn" is null
+[2025-10-21 19:46:54] ERROR - Registration error: Failed to create user
+[2025-10-21 19:47:25] ERROR - Database connection failed: Unknown database 'smartbank'
+[2025-10-21 19:47:25] ERROR - Failed to create user: Cannot invoke "java.sql.Connection.prepareStatement(String, int)" because "conn" is null
+[2025-10-21 19:47:27] ERROR - Registration error: Failed to create user
+[2025-10-21 19:47:36] ERROR - Database connection failed: Unknown database 'smartbank'
+[2025-10-21 19:47:36] ERROR - Failed to create user: Cannot invoke "java.sql.Connection.prepareStatement(String, int)" because "conn" is null
+[2025-10-21 19:47:39] ERROR - Registration error: Failed to create user
+[2025-10-21 20:00:46] INFO - === SmartBank Application Started ===
+[2025-10-21 20:00:46] INFO - System initialized successfully
+[2025-10-21 20:01:55] INFO - === SmartBank Application Started ===
+[2025-10-21 20:01:55] INFO - System initialized successfully
+[2025-10-21 20:02:16] INFO - === SmartBank Application Started ===
+[2025-10-21 20:02:16] INFO - System initialized successfully
+[2025-10-21 20:02:42] INFO - === SmartBank Application Started ===
+[2025-10-21 20:02:42] INFO - System initialized successfully
+[2025-10-21 20:03:07] INFO - === SmartBank Application Started ===
+[2025-10-21 20:03:07] INFO - System initialized successfully
+[2025-10-21 20:03:29] INFO - === SmartBank Application Started ===
+[2025-10-21 20:03:29] INFO - System initialized successfully
+[2025-10-21 20:04:17] INFO - === SmartBank Application Started ===
+[2025-10-21 20:04:17] INFO - System initialized successfully
+[2025-10-21 20:05:21] INFO - === SmartBank Application Started ===
+[2025-10-21 20:05:21] INFO - System initialized successfully
+[2025-10-21 20:05:48] INFO - === SmartBank Application Started ===
+[2025-10-21 20:05:48] INFO - System initialized successfully
+[2025-10-21 20:07:02] ERROR - Database connection failed: Unknown database 'smartbank'
+[2025-10-21 20:07:02] ERROR - Failed to create user: Cannot invoke "java.sql.Connection.prepareStatement(String, int)" because "conn" is null
+[2025-10-21 20:08:06] ERROR - Registration error: Failed to create user
+[2025-10-21 20:16:05] INFO - === SmartBank Application Started ===
+[2025-10-21 20:16:05] INFO - System initialized successfully
+[2025-10-21 20:16:56] INFO - === SmartBank Application Started ===
+[2025-10-21 20:16:56] INFO - System initialized successfully
+[2025-10-21 20:18:13] INFO - === SmartBank Application Started ===
+[2025-10-21 20:18:13] INFO - System initialized successfully
+[2025-10-21 20:21:56] INFO - === SmartBank Application Started ===
+[2025-10-21 20:21:56] INFO - System initialized successfully
+[2025-10-21 20:24:51] INFO - === SmartBank Application Started ===
+[2025-10-21 20:24:51] INFO - System initialized successfully
+[2025-10-21 20:29:27] INFO - === SmartBank Application Started ===
+[2025-10-21 20:29:27] INFO - System initialized successfully
+[2025-10-21 20:35:41] INFO - Database connection established
+[2025-10-21 20:35:41] INFO - User created successfully: santanubarik@gmail.com
+[2025-10-21 20:35:41] INFO - Account created successfully: 197419148
+[2025-10-21 20:36:23] INFO - New user registered: santanubarik@gmail.com Account: 197419148
+[2025-10-21 20:38:24] INFO - === SmartBank Application Started ===
+[2025-10-21 20:38:24] INFO - System initialized successfully
+[2025-10-21 20:38:40] INFO - Database connection established
+[2025-10-21 20:40:56] INFO - === SmartBank Application Started ===
+[2025-10-21 20:40:56] INFO - System initialized successfully
+[2025-10-21 20:41:06] INFO - Database connection established
+[2025-10-21 20:45:16] INFO - === SmartBank Application Started ===
+[2025-10-21 20:45:16] INFO - System initialized successfully
+[2025-10-21 20:45:28] INFO - Database connection established
+[2025-10-21 20:49:39] INFO - === SmartBank Application Started ===
+[2025-10-21 20:49:39] INFO - System initialized successfully
+[2025-10-21 20:49:49] INFO - Database connection established
+[2025-10-21 20:49:50] INFO - Admin logged in: admin
+[2025-10-21 20:50:26] INFO - Account status updated: 197419148 -> ACTIVE
+[2025-10-21 20:50:28] INFO - Account approved: 197419148
+[2025-10-21 20:50:51] INFO - Admin logged out
+[2025-10-21 20:51:36] INFO - Admin logged in: clerk
+[2025-10-21 20:51:45] INFO - Admin logged out
+[2025-10-21 20:53:28] INFO - User logged in: santanubarik@gmail.com
+[2025-10-21 22:56:36] INFO - === SmartBank Application Started ===
+[2025-10-21 22:56:36] INFO - System initialized successfully
+[2025-10-21 22:58:56] INFO - Database connection established
+[2025-10-21 22:58:56] INFO - User login successful: santanubarik@gmail.com
+[2025-10-21 22:58:56] ERROR - Error extracting account from result set: Column 'bank_name' not found.
+[2025-10-21 22:59:00] INFO - User logged in: santanubarik@gmail.com
+[2025-10-21 22:59:23] INFO - Admin logged in: admin
+[2025-10-21 23:00:31] ERROR - Query execution failed: Unknown column 'bank_name' in 'field list' | Query: SELECT bank_name, COUNT(*) as count, SUM(balance) as total_balance FROM accounts WHERE status = 'ACTIVE' GROUP BY bank_name
+[2025-10-21 23:00:34] ERROR - Query execution failed: Unknown column 'bank_name' in 'field list' | Query: SELECT bank_name, COUNT(*) as count, SUM(balance) as total_balance FROM accounts WHERE status = 'ACTIVE' GROUP BY bank_name
+[2025-10-21 23:00:40] INFO - Admin logged out
+[2025-10-21 23:01:10] INFO - Admin logged in: clerk
+[2025-10-21 23:01:22] INFO - Admin logged out
+[2025-10-21 23:02:22] ERROR - Email already exists: santanubarik@gmail.com
+[2025-10-21 23:02:29] ERROR - Registration error: java.lang.Exception: Email address already exists. Please use a different email.
+[2025-10-21 23:02:40] ERROR - Update execution failed: Unknown column 'password' in 'field list' | Query: INSERT INTO users (first_name, last_name, email, phone, address, date_of_birth, password) VALUES (?, ?, ?, ?, ?, ?, ?)
+[2025-10-21 23:02:40] ERROR - Failed to create user: santanub957@gmail.com
+[2025-10-21 23:02:45] ERROR - Registration error: Failed to create account. Please try again.
+[2025-10-21 23:02:52] ERROR - Update execution failed: Unknown column 'password' in 'field list' | Query: INSERT INTO users (first_name, last_name, email, phone, address, date_of_birth, password) VALUES (?, ?, ?, ?, ?, ?, ?)
+[2025-10-21 23:02:52] ERROR - Failed to create user: santanub957@gmail.com
+[2025-10-21 23:03:25] ERROR - Registration error: Failed to create account. Please try again.
+[2025-10-21 23:06:09] ERROR - Query execution failed: Unknown database 'smartbank' | Query: SELECT COUNT(*) as total FROM accounts WHERE status = 'ACTIVE'
+[2025-10-21 23:06:09] ERROR - Query execution failed: Unknown database 'smartbank' | Query: SELECT COUNT(*) as total FROM transactions WHERE DATE(timestamp) = CURDATE()
+[2025-10-21 23:06:09] ERROR - Query execution failed: Unknown database 'smartbank' | Query: SELECT SUM(balance) as total FROM accounts WHERE status = 'ACTIVE'
+[2025-10-21 23:06:09] ERROR - Query execution failed: Unknown database 'smartbank' | Query: SELECT COUNT(*) as total FROM accounts WHERE status = 'PENDING'
+[2025-10-21 23:06:09] ERROR - Query execution failed: Unknown database 'smartbank' | Query: SELECT COUNT(*) as total FROM users
+[2025-10-21 23:06:09] ERROR - Query execution failed: Unknown database 'smartbank' | Query: SELECT COUNT(*) as total FROM transactions
+[2025-10-21 23:06:10] ERROR - Query execution failed: Unknown database 'smartbank' | Query: SELECT COUNT(*) as total FROM accounts WHERE status = 'ACTIVE'
+[2025-10-21 23:06:10] ERROR - Query execution failed: Unknown database 'smartbank' | Query: SELECT COUNT(*) as total FROM transactions WHERE DATE(timestamp) = CURDATE()
+[2025-10-21 23:06:10] ERROR - Query execution failed: Unknown database 'smartbank' | Query: SELECT SUM(balance) as total FROM accounts WHERE status = 'ACTIVE'
+[2025-10-21 23:06:10] ERROR - Query execution failed: Unknown database 'smartbank' | Query: SELECT COUNT(*) as total FROM accounts WHERE status = 'PENDING'
+[2025-10-21 23:06:10] ERROR - Query execution failed: Unknown database 'smartbank' | Query: SELECT COUNT(*) as total FROM users
+[2025-10-21 23:06:10] ERROR - Query execution failed: Unknown database 'smartbank' | Query: SELECT COUNT(*) as total FROM transactions
+[2025-10-21 23:06:25] INFO - === SmartBank Application Started ===
+[2025-10-21 23:06:25] INFO - System initialized successfully
+[2025-10-21 23:07:19] INFO - Database connection established
+[2025-10-21 23:07:19] INFO - User created successfully: santabarik@gmailcom
+[2025-10-21 23:07:19] INFO - Account created successfully: 455435996579 | Bank: State Bank of India (SBI)
+[2025-10-21 23:07:20] INFO - Email sent to santabarik@gmailcom: 📋 Your Bank Account Application Received - State Bank of India (SBI) - Dear santa barik,
+
+Thank you for choosing State Bank of India (SBI)! We have received your account application.
+
+📋 Application Details:
+• Bank: State Bank of India (SBI)
+• Account Number: 455435996579
+• Account Type: SAVINGS ACCOUNT
+• Initial Deposit: $5000.00
+• Status: ⏳ PENDING APPROVAL
+
+⏰ Next Steps:
+Your application is currently under review. You will receive another email once your account is approved.
+Typically, this process takes 1-2 business days.
+
+For any queries, please contact our customer service.
+
+Thank you for your patience!
+
+Best regards,
+Customer Service Team
+State Bank of India (SBI)
+[2025-10-21 23:07:20] INFO - Account creation email sent to: santabarik@gmailcom
+[2025-10-21 23:07:48] INFO - New user registered: santabarik@gmailcom | Account: 455435996579
+[2025-10-21 23:08:10] INFO - Admin logged in: clerk
+[2025-10-21 23:09:12] INFO - Admin logged out
+[2025-10-21 23:09:48] INFO - User created successfully: santanubarik@gmail.com
+[2025-10-21 23:09:48] INFO - Account created successfully: 910088292088 | Bank: State Bank of India (SBI)
+[2025-10-21 23:09:48] INFO - Email sent to santanubarik@gmail.com: 📋 Your Bank Account Application Received - State Bank of India (SBI) - Dear santa barik,
+
+Thank you for choosing State Bank of India (SBI)! We have received your account application.
+
+📋 Application Details:
+• Bank: State Bank of India (SBI)
+• Account Number: 910088292088
+• Account Type: SAVINGS ACCOUNT
+• Initial Deposit: $5000.00
+• Status: ⏳ PENDING APPROVAL
+
+⏰ Next Steps:
+Your application is currently under review. You will receive another email once your account is approved.
+Typically, this process takes 1-2 business days.
+
+For any queries, please contact our customer service.
+
+Thank you for your patience!
+
+Best regards,
+Customer Service Team
+State Bank of India (SBI)
+[2025-10-21 23:09:48] INFO - Account creation email sent to: santanubarik@gmail.com
+[2025-10-21 23:10:05] INFO - New user registered: santanubarik@gmail.com | Account: 910088292088
+[2025-10-21 23:10:17] INFO - Admin logged in: clerk
+[2025-10-21 23:10:49] INFO - Account status updated: 910088292088 -> ACTIVE
+[2025-10-21 23:10:49] INFO - Email sent to santanubarik@gmail.com: 🎉 Your Bank Account Has Been Approved! - State Bank of India (SBI) - Dear santa barik,
+
+We are pleased to inform you that your bank account has been approved!
+
+📋 Account Details:
+• Bank: State Bank of India (SBI)
+• Account Number: 910088292088
+• Account Type: SAVINGS ACCOUNT
+• Status: ✅ ACTIVE
+
+🔐 Login Information:
+• Email: santanubarik@gmail.com
+• Password: Your date of birth (YYYY-MM-DD format)
+
+💡 Security Note:
+For security reasons, we recommend changing your password after first login.
+
+You can now access all banking services including:
+• Fund Transfers
+• Transaction History
+• Account Statements
+• Balance Enquiry
+
+Thank you for choosing State Bank of India (SBI)!
+
+Best regards,
+Customer Service Team
+State Bank of India (SBI)
+[2025-10-21 23:10:49] INFO - Account approval email sent to: santanubarik@gmail.com
+[2025-10-21 23:10:54] INFO - Account approved: 910088292088
+[2025-10-21 23:12:23] INFO - Account status updated: 455435996579 -> SUSPENDED
+[2025-10-21 23:12:24] INFO - Account rejected: 455435996579
+[2025-10-21 23:13:13] INFO - Admin logged out
+[2025-10-21 23:13:36] INFO - User login successful: santanubarik@gmail.com
+[2025-10-21 23:13:36] INFO - User logged in: santanubarik@gmail.com
+[2025-10-22 11:35:10] INFO - === SmartBank Application Started ===
+[2025-10-22 11:35:10] INFO - System initialized successfully
+[2025-10-22 11:36:43] INFO - Database connection established
+[2025-10-22 11:36:43] INFO - User created successfully: 123@gmail.com
+[2025-10-22 11:36:43] INFO - Account created successfully: 429980711439 | Bank: State Bank of India (SBI)
+[2025-10-22 11:36:43] INFO - Email sent to 123@gmail.com: 📋 Your Bank Account Application Received - State Bank of India (SBI) - Dear atyusha mohanty,
+
+Thank you for choosing State Bank of India (SBI)! We have received your account application.
+
+📋 Application Details:
+• Bank: State Bank of India (SBI)
+• Account Number: 429980711439
+• Account Type: SAVINGS ACCOUNT
+• Initial Deposit: $500.00
+• Status: ⏳ PENDING APPROVAL
+
+⏰ Next Steps:
+Your application is currently under review. You will receive another email once your account is approved.
+Typically, this process takes 1-2 business days.
+
+For any queries, please contact our customer service.
+
+Thank you for your patience!
+
+Best regards,
+Customer Service Team
+State Bank of India (SBI)
+[2025-10-22 11:36:43] INFO - Account creation email sent to: 123@gmail.com
+[2025-10-22 11:37:02] INFO - New user registered: 123@gmail.com | Account: 429980711439
+[2025-10-22 11:37:13] INFO - Admin logged in: clerk
+[2025-10-22 11:37:46] INFO - Account status updated: 429980711439 -> ACTIVE
+[2025-10-22 11:37:46] INFO - Email sent to 123@gmail.com: 🎉 Your Bank Account Has Been Approved! - State Bank of India (SBI) - Dear atyusha mohanty,
+
+We are pleased to inform you that your bank account has been approved!
+
+📋 Account Details:
+• Bank: State Bank of India (SBI)
+• Account Number: 429980711439
+• Account Type: SAVINGS ACCOUNT
+• Status: ✅ ACTIVE
+
+🔐 Login Information:
+• Email: 123@gmail.com
+• Password: Your date of birth (YYYY-MM-DD format)
+
+💡 Security Note:
+For security reasons, we recommend changing your password after first login.
+
+You can now access all banking services including:
+• Fund Transfers
+• Transaction History
+• Account Statements
+• Balance Enquiry
+
+Thank you for choosing State Bank of India (SBI)!
+
+Best regards,
+Customer Service Team
+State Bank of India (SBI)
+[2025-10-22 11:37:46] INFO - Account approval email sent to: 123@gmail.com
+[2025-10-22 11:37:51] INFO - Account approved: 429980711439
+[2025-10-22 11:38:11] INFO - Admin logged out
+[2025-10-22 11:38:44] INFO - User login successful: 123@gmail.com
+[2025-10-22 11:38:45] INFO - User logged in: 123@gmail.com
+[2025-10-22 21:44:57] INFO - === SmartBank Application Started ===
+[2025-10-22 21:44:57] INFO - System initialized successfully
+[2025-10-22 21:46:05] INFO - === SmartBank Application Started ===
+[2025-10-22 21:46:05] INFO - System initialized successfully
+[2025-10-22 21:47:03] INFO - === SmartBank Application Started ===
+[2025-10-22 21:47:03] INFO - System initialized successfully
+[2025-10-22 21:49:38] INFO - === SmartBank Application Started ===
+[2025-10-22 21:49:38] INFO - System initialized successfully
+[2025-10-22 21:52:32] INFO - Database connection established
+[2025-10-22 21:52:32] INFO - User login successful: santanubarik@gmail.com
+[2025-10-22 21:52:33] INFO - User logged in: santanubarik@gmail.com
+[2025-10-22 22:03:07] INFO - === SmartBank Application Started ===
+[2025-10-22 22:03:07] INFO - System initialized successfully
+[2025-10-22 22:05:12] INFO - === SmartBank Application Started ===
+[2025-10-22 22:05:12] INFO - System initialized successfully
+[2025-10-22 22:05:32] INFO - === SmartBank Application Started ===
+[2025-10-22 22:05:32] INFO - System initialized successfully
+[2025-10-22 22:05:58] INFO - === SmartBank Application Started ===
+[2025-10-22 22:05:58] INFO - System initialized successfully
+[2025-10-22 22:06:14] INFO - === SmartBank Application Started ===
+[2025-10-22 22:06:14] INFO - System initialized successfully
+[2025-10-22 22:06:34] INFO - === SmartBank Application Started ===
+[2025-10-22 22:06:34] INFO - System initialized successfully
+[2025-10-22 22:06:47] INFO - === SmartBank Application Started ===
+[2025-10-22 22:06:47] INFO - System initialized successfully
+[2025-10-22 22:07:19] INFO - === SmartBank Application Started ===
+[2025-10-22 22:07:19] INFO - System initialized successfully
+[2025-10-22 22:07:56] INFO - === SmartBank Application Started ===
+[2025-10-22 22:07:56] INFO - System initialized successfully
+[2025-10-22 22:08:16] INFO - === SmartBank Application Started ===
+[2025-10-22 22:08:16] INFO - System initialized successfully
+[2025-10-22 22:08:43] INFO - === SmartBank Application Started ===
+[2025-10-22 22:08:43] INFO - System initialized successfully
+[2025-10-22 22:09:09] INFO - === SmartBank Application Started ===
+[2025-10-22 22:09:09] INFO - System initialized successfully
+[2025-10-22 22:09:23] INFO - === SmartBank Application Started ===
+[2025-10-22 22:09:23] INFO - System initialized successfully
+[2025-10-22 22:09:47] INFO - === SmartBank Application Started ===
+[2025-10-22 22:09:47] INFO - System initialized successfully
+[2025-10-22 22:13:48] INFO - === SmartBank Application Started ===
+[2025-10-22 22:13:48] INFO - System initialized successfully
+[2025-10-22 22:21:56] INFO - === SmartBank Application Started ===
+[2025-10-22 22:21:56] INFO - System initialized successfully
+[2025-10-22 22:46:26] INFO - === SmartBank Application Started ===
+[2025-10-22 22:46:26] INFO - System initialized successfully
+[2025-10-22 22:46:44] INFO - Database connection established
+[2025-10-22 22:46:44] INFO - User login successful: santanubarik@gmail.com
+[2025-10-22 22:46:45] INFO - User logged in: santanubarik@gmail.com
+[2025-10-22 22:47:27] INFO - === SmartBank Application Started ===
+[2025-10-22 22:47:27] INFO - System initialized successfully
+[2025-10-22 22:47:53] INFO - Database connection established
+[2025-10-22 22:47:53] INFO - Admin logged in: clerk
+[2025-10-22 22:49:05] INFO - Admin logged out
+[2025-10-22 22:49:54] INFO - === SmartBank Application Started ===
+[2025-10-22 22:49:54] INFO - System initialized successfully
+[2025-10-22 22:51:34] INFO - Database connection established
+[2025-10-22 22:51:34] INFO - User created successfully: atyu@gmail.com
+[2025-10-22 22:51:34] INFO - Account created successfully: 220109795392 | Bank: HDFC Bank
+[2025-10-22 22:51:34] INFO - Email sent to atyu@gmail.com: 📋 Your Bank Account Application Received - HDFC Bank - Dear Atyusha Mohanty,
+
+Thank you for choosing HDFC Bank! We have received your account application.
+
+📋 Application Details:
+• Bank: HDFC Bank
+• Account Number: 220109795392
+• Account Type: SAVINGS ACCOUNT
+• Initial Deposit: $10000.00
+• Status: ⏳ PENDING APPROVAL
+
+⏰ Next Steps:
+Your application is currently under review. You will receive another email once your account is approved.
+Typically, this process takes 1-2 business days.
+
+For any queries, please contact our customer service.
+
+Thank you for your patience!
+
+Best regards,
+Customer Service Team
+HDFC Bank
+[2025-10-22 22:51:34] INFO - Account creation email sent to: atyu@gmail.com
+[2025-10-22 22:51:41] ERROR - Registration error: Conversion = ';'
+[2025-10-22 22:51:45] ERROR - Email already exists: atyu@gmail.com
+[2025-10-22 22:52:00] ERROR - Registration error: java.lang.Exception: Email address already exists. Please use a different email.
+[2025-10-22 22:52:06] INFO - User created successfully: atyum@gmail.com
+[2025-10-22 22:52:06] INFO - Account created successfully: 559511520407 | Bank: HDFC Bank
+[2025-10-22 22:52:06] INFO - Email sent to atyum@gmail.com: 📋 Your Bank Account Application Received - HDFC Bank - Dear Atyusha Mohanty,
+
+Thank you for choosing HDFC Bank! We have received your account application.
+
+📋 Application Details:
+• Bank: HDFC Bank
+• Account Number: 559511520407
+• Account Type: SAVINGS ACCOUNT
+• Initial Deposit: $10000.00
+• Status: ⏳ PENDING APPROVAL
+
+⏰ Next Steps:
+Your application is currently under review. You will receive another email once your account is approved.
+Typically, this process takes 1-2 business days.
+
+For any queries, please contact our customer service.
+
+Thank you for your patience!
+
+Best regards,
+Customer Service Team
+HDFC Bank
+[2025-10-22 22:52:06] INFO - Account creation email sent to: atyum@gmail.com
+[2025-10-22 22:52:09] ERROR - Registration error: Conversion = ';'
+[2025-10-22 22:52:10] ERROR - Email already exists: atyum@gmail.com
+[2025-10-22 22:52:15] ERROR - Registration error: java.lang.Exception: Email address already exists. Please use a different email.
+[2025-10-22 22:52:41] INFO - User created successfully: Atyushamohanty@gmail.com
+[2025-10-22 22:52:41] INFO - Account created successfully: 528473510916 | Bank: HDFC Bank
+[2025-10-22 22:52:41] INFO - Email sent to Atyushamohanty@gmail.com: 📋 Your Bank Account Application Received - HDFC Bank - Dear Atyusha Mohanty,
+
+Thank you for choosing HDFC Bank! We have received your account application.
+
+📋 Application Details:
+• Bank: HDFC Bank
+• Account Number: 528473510916
+• Account Type: SAVINGS ACCOUNT
+• Initial Deposit: $10000.00
+• Status: ⏳ PENDING APPROVAL
+
+⏰ Next Steps:
+Your application is currently under review. You will receive another email once your account is approved.
+Typically, this process takes 1-2 business days.
+
+For any queries, please contact our customer service.
+
+Thank you for your patience!
+
+Best regards,
+Customer Service Team
+HDFC Bank
+[2025-10-22 22:52:41] INFO - Account creation email sent to: Atyushamohanty@gmail.com
+[2025-10-22 22:52:52] ERROR - Registration error: Conversion = ';'
+[2025-10-22 22:53:16] INFO - === SmartBank Application Started ===
+[2025-10-22 22:53:16] INFO - System initialized successfully
+[2025-10-22 22:54:17] INFO - Database connection established
+[2025-10-22 22:54:17] ERROR - Email already exists: Atyushamohanty@gmail.com
+[2025-10-22 22:57:03] ERROR - Registration error: java.lang.Exception: Email address already exists. Please use a different email.
+[2025-10-22 23:01:51] INFO - === SmartBank Application Started ===
+[2025-10-22 23:01:51] INFO - System initialized successfully
+[2025-10-22 23:02:34] INFO - Database connection established
+[2025-10-22 23:02:35] INFO - User created successfully: santanubarik@gmail.com
+[2025-10-22 23:02:35] INFO - Account created successfully: 320039525441 | Bank: State Bank of India (SBI)
+[2025-10-22 23:02:35] INFO - Email sent to santanubarik@gmail.com: 📋 Your Bank Account Application Received - State Bank of India (SBI) - Dear Santanu Barik,
+
+Thank you for choosing State Bank of India (SBI)! We have received your account application.
+
+📋 Application Details:
+• Bank: State Bank of India (SBI)
+• Account Number: 320039525441
+• Account Type: SAVINGS ACCOUNT
+• Initial Deposit: $5000.0
+• Status: ⏳ PENDING APPROVAL
+
+⏰ Next Steps:
+Your application is currently under review. You will receive another email once your account is approved.
+Typically, this process takes 1-2 business days.
+
+For any queries, please contact our customer service.
+
+Thank you for your patience!
+
+Best regards,
+Customer Service Team
+State Bank of India (SBI)
+[2025-10-22 23:02:35] INFO - Account creation email sent to: santanubarik@gmail.com
+[2025-10-22 23:02:35] INFO - Email sent to santanubarik@gmail.com: 📋 Your Bank Account Application Received - State Bank of India (SBI) - Dear Santanu Barik,
+
+Thank you for choosing State Bank of India (SBI)! We have received your account application.
+
+📋 Application Details:
+• Bank: State Bank of India (SBI)
+• Account Number: 621361758353
+• Account Type: SAVINGS ACCOUNT
+• Initial Deposit: $5000.00
+• Status: ⏳ PENDING APPROVAL
+
+⏰ Next Steps:
+Your application is currently under review. You will receive another email once your account is approved.
+Typically, this process takes 1-2 business days.
+
+For any queries, please contact our customer service.
+
+Thank you for your patience!
+
+Best regards,
+Customer Service Team
+State Bank of India (SBI)
+[2025-10-22 23:02:35] INFO - Account creation email sent to: santanubarik@gmail.com
+[2025-10-22 23:02:46] ERROR - Registration error: Conversion = ';'
+[2025-10-22 23:02:48] WARNING - Email already exists in database: santanubarik@gmail.com
+[2025-10-22 23:02:48] ERROR - Email already exists: santanubarik@gmail.com
+[2025-10-22 23:02:54] ERROR - Registration error: java.lang.Exception: Email address already exists. Please use a different email.
+[2025-10-22 23:02:56] WARNING - Email already exists in database: santanubarik@gmail.com
+[2025-10-22 23:02:56] ERROR - Email already exists: santanubarik@gmail.com
+[2025-10-22 23:02:57] ERROR - Registration error: java.lang.Exception: Email address already exists. Please use a different email.
+[2025-10-22 23:19:13] INFO - === SmartBank Application Started ===
+[2025-10-22 23:19:13] INFO - System initialized successfully
+[2025-10-22 23:19:39] INFO - Database connection established
+[2025-10-22 23:19:39] WARNING - Login attempt for inactive account: santanubarik@gmail.com
+[2025-10-22 23:19:55] INFO - Admin logged in: clerk
+[2025-10-22 23:20:12] ERROR - Error extracting account from result set: Column 'password' not found.
+[2025-10-22 23:20:34] ERROR - Error extracting account from result set: Column 'password' not found.
+[2025-10-22 23:20:45] ERROR - Error extracting account from result set: Column 'password' not found.
+[2025-10-22 23:20:46] ERROR - Error extracting account from result set: Column 'password' not found.
+[2025-10-22 23:20:47] ERROR - Error extracting account from result set: Column 'password' not found.
+[2025-10-22 23:20:48] ERROR - Error extracting account from result set: Column 'password' not found.
+[2025-10-22 23:20:48] ERROR - Error extracting account from result set: Column 'password' not found.
+[2025-10-22 23:21:05] ERROR - Error extracting account from result set: Column 'password' not found.
+[2025-10-22 23:21:16] INFO - === SmartBank Application Started ===
+[2025-10-22 23:21:16] INFO - System initialized successfully
+[2025-10-22 23:21:27] INFO - Database connection established
+[2025-10-22 23:21:28] INFO - Admin logged in: admin
+[2025-10-22 23:21:30] ERROR - Error extracting account from result set: Column 'password' not found.
+[2025-10-22 23:52:16] INFO - === SmartBank Application Started ===
+[2025-10-22 23:52:16] INFO - System initialized successfully
+[2025-10-22 23:53:13] INFO - Database connection established
+[2025-10-22 23:53:13] INFO - User created successfully: santa@gmail.com
+[2025-10-22 23:53:13] INFO - Account created successfully: 830650007351 | Bank: State Bank of India (SBI)
+[2025-10-22 23:53:13] INFO - Email sent to santa@gmail.com: 📋 Your Bank Account Application Received - State Bank of India (SBI) - Dear santa barik,
+
+Thank you for choosing State Bank of India (SBI)! We have received your account application.
+
+📋 Application Details:
+• Bank: State Bank of India (SBI)
+• Account Number: 830650007351
+• Account Type: SALARY ACCOUNT
+• Initial Deposit: $5000
+• Status: ⏳ PENDING APPROVAL
+
+⏰ Next Steps:
+Your application is currently under review. You will receive another email once your account is approved.
+Typically, this process takes 1-2 business days.
+
+For any queries, please contact our customer service.
+
+Thank you for your patience!
+
+Best regards,
+Customer Service Team
+State Bank of India (SBI)
+[2025-10-22 23:53:13] INFO - Account creation email sent to: santa@gmail.com
+[2025-10-22 23:53:37] INFO - Clerk login successful (simple match): clerk
+[2025-10-22 23:53:37] INFO - Admin logged in: clerk
+[2025-10-22 23:53:47] INFO - Account status updated: 320039525441 -> SUSPENDED
+[2025-10-22 23:53:48] INFO - Account rejected: 320039525441
+[2025-10-22 23:53:56] INFO - Account status updated: 830650007351 -> ACTIVE
+[2025-10-22 23:53:56] INFO - Email sent to santa@gmail.com: 🎉 Your Bank Account Has Been Approved! - State Bank of India (SBI) - Dear santa barik,
+
+We are pleased to inform you that your bank account has been approved!
+
+📋 Account Details:
+• Bank: State Bank of India (SBI)
+• Account Number: 830650007351
+• Account Type: SALARY ACCOUNT
+• Status: ✅ ACTIVE
+
+🔐 Login Information:
+• Email: santa@gmail.com
+• Password: Your date of birth (YYYY-MM-DD format)
+
+💡 Security Note:
+For security reasons, we recommend changing your password after first login.
+
+You can now access all banking services including:
+• Fund Transfers
+• Transaction History
+• Account Statements
+• Balance Enquiry
+
+Thank you for choosing State Bank of India (SBI)!
+
+Best regards,
+Customer Service Team
+State Bank of India (SBI)
+[2025-10-22 23:53:56] INFO - [2025-10-22 23:53:56] INFO - Account approval email sent to: santa@gmail.com
+Email sent to santa@gmail.com: 🎉 Your Bank Account Has Been Approved! - State Bank of India (SBI) - Dear santa barik,
+
+We are pleased to inform you that your bank account has been approved!
+
+📋 Account Details:
+• Bank: State Bank of India (SBI)
+• Account Number: 830650007351
+• Account Type: SALARY ACCOUNT
+• Status: ✅ ACTIVE
+
+🔐 Login Information:
+• Email: santa@gmail.com
+• Password: Your date of birth (YYYY-MM-DD format)
+
+💡 Security Note:
+For security reasons, we recommend changing your password after first login.
+
+You can now access all banking services including:
+• Fund Transfers
+• Transaction History
+• Account Statements
+• Balance Enquiry
+
+Thank you for choosing State Bank of India (SBI)!
+
+Best regards,
+Customer Service Team
+State Bank of India (SBI)
+[2025-10-22 23:53:56] INFO - Account approval email sent to: santa@gmail.com
+[2025-10-22 23:53:58] INFO - Account approved: 830650007351
+[2025-10-22 23:54:10] INFO - Admin logged out
+[2025-10-22 23:55:13] INFO - User login successful: santa@gmail.com
+[2025-10-22 23:55:14] INFO - User logged in: santa@gmail.com
+[2025-10-23 00:02:44] INFO - === SmartBank Application Started ===
+[2025-10-23 00:02:44] INFO - System initialized successfully
+[2025-10-23 00:02:48] INFO - === SmartBank Application Started ===
+[2025-10-23 00:02:48] INFO - System initialized successfully
+[2025-10-23 00:03:13] INFO - Database connection established
+[2025-10-23 00:03:13] WARNING - Login attempt for inactive account: santanubarik@gmail.com
+[2025-10-23 00:03:41] WARNING - Login attempt for inactive account: santanubarik@gmail.com
+[2025-10-23 00:03:57] WARNING - Login attempt for inactive account: santanubarik@gmail.com
+[2025-10-23 00:04:19] INFO - User login successful: santa@gmail.com
+[2025-10-23 00:04:19] INFO - User logged in: santa@gmail.com
+[2025-10-23 00:04:29] INFO - User logged out: 830650007351
+[2025-10-23 00:05:17] INFO - User created successfully: atyu@gmail.com
+[2025-10-23 00:05:17] INFO - Account created successfully: 664848419391 | Bank: State Bank of India (SBI)
+[2025-10-23 00:05:17] INFO - Email sent to atyu@gmail.com: 📋 Your Bank Account Application Received - State Bank of India (SBI) - Dear Atyusha Mohanty,
+
+Thank you for choosing State Bank of India (SBI)! We have received your account application.
+
+📋 Application Details:
+• Bank: State Bank of India (SBI)
+• Account Number: 664848419391
+• Account Type: SAVINGS ACCOUNT
+• Initial Deposit: $10000
+• Status: ⏳ PENDING APPROVAL
+
+⏰ Next Steps:
+Your application is currently under review. You will receive another email once your account is approved.
+Typically, this process takes 1-2 business days.
+
+For any queries, please contact our customer service.
+
+Thank you for your patience!
+
+Best regards,
+Customer Service Team
+State Bank of India (SBI)
+[2025-10-23 00:05:17] INFO - Account creation email sent to: atyu@gmail.com
+[2025-10-23 00:05:32] INFO - Clerk login successful (simple match): clerk
+[2025-10-23 00:05:32] INFO - Admin logged in: clerk
+[2025-10-23 00:05:42] INFO - Account status updated: 664848419391 -> ACTIVE
+[2025-10-23 00:05:42] INFO - Email sent to atyu@gmail.com: 🎉 Your Bank Account Has Been Approved! - State Bank of India (SBI) - Dear Atyusha Mohanty,
+
+We are pleased to inform you that your bank account has been approved!
+
+📋 Account Details:
+• Bank: State Bank of India (SBI)
+• Account Number: 664848419391
+• Account Type: SAVINGS ACCOUNT
+• Status: ✅ ACTIVE
+
+🔐 Login Information:
+• Email: atyu@gmail.com
+• Password: Your date of birth (YYYY-MM-DD format)
+
+💡 Security Note:
+For security reasons, we recommend changing your password after first login.
+
+You can now access all banking services including:
+• Fund Transfers
+• Transaction History
+• Account Statements
+• Balance Enquiry
+
+Thank you for choosing State Bank of India (SBI)!
+
+Best regards,
+Customer Service Team
+State Bank of India (SBI)
+[2025-10-23 00:05:42] INFO - Account approval email sent to: atyu@gmail.com
+[2025-10-23 00:05:42] INFO - Email sent to atyu@gmail.com: 🎉 Your Bank Account Has Been Approved! - State Bank of India (SBI) - Dear Atyusha Mohanty,
+
+We are pleased to inform you that your bank account has been approved!
+
+📋 Account Details:
+• Bank: State Bank of India (SBI)
+• Account Number: 664848419391
+• Account Type: SAVINGS ACCOUNT
+• Status: ✅ ACTIVE
+
+🔐 Login Information:
+• Email: atyu@gmail.com
+• Password: Your date of birth (YYYY-MM-DD format)
+
+💡 Security Note:
+For security reasons, we recommend changing your password after first login.
+
+You can now access all banking services including:
+• Fund Transfers
+• Transaction History
+• Account Statements
+• Balance Enquiry
+
+Thank you for choosing State Bank of India (SBI)!
+
+Best regards,
+Customer Service Team
+State Bank of India (SBI)
+[2025-10-23 00:05:42] INFO - Account approval email sent to: atyu@gmail.com
+[2025-10-23 00:05:43] INFO - Account approved: 664848419391
+[2025-10-23 00:05:49] INFO - Admin logged out
+[2025-10-23 00:06:10] INFO - User login successful: atyu@gmail.com
+[2025-10-23 00:06:10] INFO - User logged in: atyu@gmail.com
+[2025-10-23 00:06:43] INFO - Transfer successful: 830650007351 -> 664848419391, Amount: 2500, Description: Fund Transfer
+[2025-10-23 00:06:43] INFO - Email sent to atyu@gmail.com: 💰 Fund Received Notification - Dear Atyusha Mohanty,
+
+You have received $2500.00 from account 830650007351.
+Description: Fund Transfer
+
+Thank you for banking with us!
+[2025-10-23 00:06:43] INFO - Email sent to santa@gmail.com: 💸 Fund Transfer Notification - Dear santa barik,
+
+A fund transfer has been processed from your account.
+
+📊 Transaction Details:
+• From Account: 830650007351
+• To Account: 664848419391
+• Amount: $2500
+• Description: Fund Transfer
+• Date: 2025-10-23T00:06:43.365643500
+
+If you did not authorize this transaction, please contact our customer service immediately.
+
+Thank you for banking with us!
+
+Best regards,
+SmartBank Security Team
+[2025-10-23 00:06:45] INFO - Transfer completed: 830650007351 -> 664848419391 Amount: 2500
+[2025-10-23 00:07:30] INFO - Transfer successful: 830650007351 -> 664848419391, Amount: 500, Description: Fund Transfer
+[2025-10-23 00:07:30] INFO - Email sent to atyu@gmail.com: 💰 Fund Received Notification - Dear Atyusha Mohanty,
+
+You have received $500.00 from account 830650007351.
+Description: Fund Transfer
+
+Thank you for banking with us!
+[2025-10-23 00:07:30] INFO - Email sent to santa@gmail.com: 💸 Fund Transfer Notification - Dear santa barik,
+
+A fund transfer has been processed from your account.
+
+📊 Transaction Details:
+• From Account: 830650007351
+• To Account: 664848419391
+• Amount: $500
+• Description: Fund Transfer
+• Date: 2025-10-23T00:07:30.530677200
+
+If you did not authorize this transaction, please contact our customer service immediately.
+
+Thank you for banking with us!
+
+Best regards,
+SmartBank Security Team
+[2025-10-23 00:07:31] INFO - Transfer completed: 830650007351 -> 664848419391 Amount: 500
+[2025-10-23 00:08:27] INFO - User logged out: 664848419391
+[2025-10-23 00:16:28] INFO - ✅ Email sent successfully to: santanubarik@gmail.com
+[2025-10-23 00:17:35] INFO - ✅ Email sent successfully to: santanubarik537@gmail.com
+[2025-10-23 00:18:18] INFO - === SmartBank Application Started ===
+[2025-10-23 00:18:18] INFO - System initialized successfully
+[2025-10-23 00:19:01] INFO - Database connection established
+[2025-10-23 00:19:01] INFO - User created successfully: santanubarik537@gmail.com
+[2025-10-23 00:19:01] INFO - Account created successfully: 452997362687 | Bank: State Bank of India (SBI)
+[2025-10-23 00:19:05] INFO - ✅ Email sent successfully to: santanubarik537@gmail.com
+[2025-10-23 00:19:05] INFO - Account creation email sent to: santanubarik537@gmail.com
+[2025-10-23 00:19:16] INFO - Clerk login successful (simple match): clerk
+[2025-10-23 00:19:17] INFO - Admin logged in: clerk
+[2025-10-23 00:19:28] INFO - Account status updated: 452997362687 -> ACTIVE
+[2025-10-23 00:19:30] INFO - Account approved: 452997362687
+[2025-10-23 00:19:31] INFO - ✅ Email sent successfully to: santanubarik537@gmail.com
+[2025-10-23 00:19:31] INFO - Account approval email sent to: santanubarik537@gmail.com
+[2025-10-23 00:19:32] INFO - ✅ Email sent successfully to: santanubarik537@gmail.com
+[2025-10-23 00:19:32] INFO - Account approval email sent to: santanubarik537@gmail.com
+[2025-10-23 00:32:36] INFO - Admin logged out
+[2025-10-23 00:34:15] INFO - User created successfully: palaiajayranjan@gmail.com
+[2025-10-23 00:34:15] INFO - Account created successfully: 642606569814 | Bank: Punjab National Bank (PNB)
+[2025-10-23 00:34:19] INFO - ✅ Email sent successfully to: palaiajayranjan@gmail.com
+[2025-10-23 00:34:19] INFO - Account creation email sent to: palaiajayranjan@gmail.com
+[2025-10-23 00:34:30] INFO - Clerk login successful (simple match): clerk
+[2025-10-23 00:34:30] INFO - Admin logged in: clerk
+[2025-10-23 00:34:37] INFO - Account status updated: 642606569814 -> ACTIVE
+[2025-10-23 00:34:38] INFO - Account approved: 642606569814
+[2025-10-23 00:34:41] INFO - ✅ Email sent successfully to: palaiajayranjan@gmail.com
+[2025-10-23 00:34:41] INFO - Account approval email sent to: palaiajayranjan@gmail.com
+[2025-10-23 00:34:42] INFO - ✅ Email sent successfully to: palaiajayranjan@gmail.com
+[2025-10-23 00:34:42] INFO - Account approval email sent to: palaiajayranjan@gmail.com
+[2025-10-23 00:35:01] INFO - Admin logged out
+[2025-10-23 00:48:20] INFO - User created successfully: atyushamohanty@gmail.com
+[2025-10-23 00:48:20] INFO - Account created successfully: 628551158438 | Bank: Axis Bank
+[2025-10-23 00:48:25] INFO - ✅ Email sent successfully to: atyushamohanty@gmail.com
+[2025-10-23 00:48:25] INFO - Account creation email sent to: atyushamohanty@gmail.com
+[2025-10-23 00:48:51] INFO - Clerk login successful (simple match): clerk
+[2025-10-23 00:48:51] INFO - Admin logged in: clerk
+[2025-10-23 00:49:08] INFO - Account status updated: 628551158438 -> ACTIVE
+[2025-10-23 00:49:08] INFO - Account approved: 628551158438
+[2025-10-23 00:49:11] INFO - ✅ Email sent successfully to: atyushamohanty@gmail.com
+[2025-10-23 00:49:11] INFO - Account approval email sent to: atyushamohanty@gmail.com
+[2025-10-23 00:49:12] INFO - ✅ Email sent successfully to: atyushamohanty@gmail.com
+[2025-10-23 00:49:12] INFO - Account approval email sent to: atyushamohanty@gmail.com
+[2025-10-23 11:11:38] INFO - === SmartBank Application Started ===
+[2025-10-23 11:11:38] INFO - System initialized successfully
+[2025-10-23 11:13:48] INFO - Database connection established
+[2025-10-23 11:13:48] INFO - User created successfully: prabhushankarmund@gmail.com
+[2025-10-23 11:13:48] INFO - Account created successfully: 597500516877 | Bank: Punjab National Bank (PNB)
+[2025-10-23 11:13:52] INFO - ✅ Email sent successfully to: prabhushankarmund@gmail.com
+[2025-10-23 11:13:52] INFO - Account creation email sent to: prabhushankarmund@gmail.com
+[2025-10-23 11:14:22] INFO - Clerk login successful (simple match): clerk
+[2025-10-23 11:14:22] INFO - Admin logged in: clerk
+[2025-10-23 11:14:44] INFO - Account status updated: 597500516877 -> ACTIVE
+[2025-10-23 11:14:46] INFO - Account approved: 597500516877
+[2025-10-23 11:14:48] INFO - ✅ Email sent successfully to: prabhushankarmund@gmail.com
+[2025-10-23 11:14:48] INFO - Account approval email sent to: prabhushankarmund@gmail.com
+[2025-10-23 11:14:48] INFO - ✅ Email sent successfully to: prabhushankarmund@gmail.com
+[2025-10-23 11:14:48] INFO - Account approval email sent to: prabhushankarmund@gmail.com
+[2025-10-23 11:16:12] INFO - Admin logged out
+[2025-10-23 11:16:27] WARNING - Failed login attempt: prabhushankarmund@gmail.com
+[2025-10-23 11:16:43] INFO - User login successful: prabhushankarmund@gmail.com
+[2025-10-23 11:16:43] INFO - User logged in: prabhushankarmund@gmail.com
+[2025-10-23 11:19:07] INFO - === SmartBank Application Started ===
+[2025-10-23 11:19:07] INFO - System initialized successfully
+[2025-10-23 11:19:30] INFO - Database connection established
+[2025-10-23 11:19:30] WARNING - Login attempt for inactive account: santanubarik@gmail.com
+[2025-10-23 11:19:37] WARNING - Login attempt for inactive account: santanubarik@gmail.com
+[2025-10-23 11:19:48] WARNING - Login attempt for inactive account: santanubarik@gmail.com
+[2025-10-23 11:20:09] INFO - User login successful: santa@gmail.com
+[2025-10-23 11:20:10] INFO - User logged in: santa@gmail.com
+[2025-10-23 11:21:11] INFO - Transfer successful: 597500516877 -> 830650007351, Amount: 3000, Description: Fund Transfer
+[2025-10-23 11:21:15] INFO - ✅ Email sent successfully to: santa@gmail.com
+[2025-10-23 11:21:15] INFO - ✅ Email sent successfully to: prabhushankarmund@gmail.com
+[2025-10-23 11:21:15] INFO - Transfer notification email sent to: prabhushankarmund@gmail.com
+[2025-10-23 11:21:24] INFO - Transfer completed: 597500516877 -> 830650007351 Amount: 3000
+[2025-10-23 14:52:38] INFO - === SmartBank Application Started ===
+[2025-10-23 14:52:38] INFO - System initialized successfully
+[2025-10-23 14:57:02] INFO - === SmartBank Application Started ===
+[2025-10-23 14:57:02] INFO - System initialized successfully
+[2025-10-23 14:57:31] INFO - Database connection established
+[2025-10-23 14:57:31] INFO - Clerk login successful (simple match): clerk
+[2025-10-23 14:57:31] INFO - Admin logged in: clerk
+[2026-01-02 21:53:57] INFO - === SmartBank Application Started ===
+[2026-01-02 21:53:57] INFO - System initialized successfully
