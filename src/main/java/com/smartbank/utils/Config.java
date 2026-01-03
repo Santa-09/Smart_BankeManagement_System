@@ -3,8 +3,8 @@ package com.smartbank.utils;
 public class Config {
     // Database Configuration
     public static final String DB_URL = "jdbc:mysql://localhost:3306/smartbank";
-    public static final String DB_USER = "root";
-    public static final String DB_PASSWORD = "Santanu@#2006";
+    public static final String DB_USER = "ENTER_YOUR_USERNAME";
+    public static final String DB_PASSWORD = "ENTER_DB_PASSWORD";
 
     // Email Configuration
     public static final String SMTP_HOST = "smtp.gmail.com";
