@@ -9,8 +9,8 @@ public class Config {
     // Email Configuration
     public static final String SMTP_HOST = "smtp.gmail.com";
     public static final String SMTP_PORT = "587";
-    public static final String EMAIL_USERNAME = "santanub957@gmail.com";
-    public static final String EMAIL_PASSWORD = "algv bhyx fere oeyf";
+    public static final String EMAIL_USERNAME = "ENTER_YOUR_MAIL";
+    public static final String EMAIL_PASSWORD = "ENTER_YOUR_SECURITY_KEY";
 
     // Application Settings
     public static final String APP_NAME = "SmartBank";
